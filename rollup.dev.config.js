@@ -7,7 +7,7 @@ fs.rmSync('./dist', { recursive: true, force: true });
 
 /** @type {import('rollup').RollupOptions} */
 const config = {
-  input: 'src/main.ts',
+  input: 'src/index.ts',
   output: {
     file: 'dist/bundle.js',
     format: 'cjs',
