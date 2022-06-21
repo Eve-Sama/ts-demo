@@ -2,11 +2,11 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    node: true
+    node: true,
   },
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
   },
   parser: '@typescript-eslint/parser',
   extends: ['plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended', 'prettier'],
@@ -24,6 +24,6 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/ban-types': 'off',
-    '@typescript-eslint/no-unused-vars': 'warn'
-  }
+    '@typescript-eslint/no-unused-vars': 'warn',
+  },
 };
