@@ -1,10 +1,12 @@
 import { terser } from 'rollup-plugin-terser';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import json from '@rollup/plugin-json';
 import constants from './constants';
 import { OutputOptions, rollup } from 'rollup';
 import fs from 'fs';
 import config from './rollup.config';
 
-config.plugins!.push(...[terser({ ecma: 5 })]);
+config.plugins!.push(...[terser({ ecma: 5 }), nodeResolve(), json()]);
 
 fs.rmSync('./dist', { recursive: true, force: true });
 
