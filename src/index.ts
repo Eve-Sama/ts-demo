@@ -9,3 +9,4 @@ const res = '1';
 exports.res = res;
 
 export const a = constants.id;
+console.log(axios);
