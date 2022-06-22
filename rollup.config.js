@@ -7,7 +7,6 @@ const config = {
     file: 'dist/bundle.js',
     format: 'cjs',
   },
-  external: id => !/^[./]/.test(id),
   plugins: [typescript()],
 };
 
