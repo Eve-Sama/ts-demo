@@ -24,7 +24,7 @@ function _dealBundle(): void {
   let content = file;
   Object.entries(fieldInfo.production).forEach(item => {
     const value = item[1];
-    content = file.replace(`'${value}'`, `${value}`);
+    content = content.replace(`'${value}'`, `${value}`);
   });
   fs.writeFile('dist/bundle.js', content, () => {});
 }
