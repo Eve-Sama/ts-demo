@@ -7,3 +7,9 @@ console.log(isDev);
 
 console.log('hello world');
 console.log(test);
+
+const res = '1';
+
+exports.res = res;
+
+export const a = '哈哈';
