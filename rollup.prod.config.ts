@@ -18,9 +18,7 @@ async function build() {
   await bundle.write(output);
   const file = await fs.readFileSync('dist/bundle.js', 'utf-8');
   const newContent = file.replace(`"${constants.id}"`, `${constants.id}`);
-  fs.writeFile('dist/bundle.js', newContent, err => {
-    console.log(err);
-  });
+  fs.writeFile('dist/bundle.js', newContent, () => {});
 }
 
 build();

@@ -11,11 +11,7 @@ async function build() {
   const output = outputOption as OutputOptions;
   await bundle.generate(output);
   await bundle.write(output);
-  try {
-    child_process.spawn(`node`, [`dist/bundle.js`], { stdio: 'inherit', env: { ...process.env, NODE_ENV: 'development' } });
-  } catch (e) {
-    console.log(e);
-  }
+  child_process.spawn(`node`, [`dist/bundle.js`], { stdio: 'inherit', env: { ...process.env, NODE_ENV: 'development' } });
 }
 
 build();
