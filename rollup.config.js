@@ -1,4 +1,5 @@
 const typescript = require('@rollup/plugin-typescript');
+const commonjs = require('@rollup/plugin-commonjs');
 
 /** @type {import('rollup').RollupOptions} */
 const config = {
@@ -7,7 +8,7 @@ const config = {
     file: 'dist/bundle.js',
     format: 'cjs',
   },
-  plugins: [typescript()],
+  plugins: [commonjs(), typescript()],
 };
 
 module.exports = config;
