@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node rollup.dev.config.ts",
+    "start": "rollup -c rollup.config.js -w",
     "build": "ts-node rollup.prod.config.ts",
     "lint": "eslint \"{src,test}/**/*.{js,ts,tsx}\" --fix",
     "format": "prettier --write \"src/**/*.{js,ts,tsx}\""
