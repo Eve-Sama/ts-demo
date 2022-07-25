@@ -1,11 +1,13 @@
-import axios from 'axios';
-import { test } from './test';
-import constants from '../constants';
-console.log(constants);
-console.log(test);
+// import axios from 'axios';
+// import { test } from './test';
+// import constants from '../constants';
+// console.log(constants);
+// console.log(test);
 
-const res = '1';
+// const res = '1';
 
-exports.res = res;
+// exports.res = res;
 
-console.log(axios);
+// console.log(axios);
+
+export const a = 'hello 世界';

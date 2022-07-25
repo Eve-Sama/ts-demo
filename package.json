@@ -12,7 +12,8 @@
   "author": "Eve-Sama",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "esbuild": "^0.14.50"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",
